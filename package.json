@@ -1,0 +1,36 @@
+{
+  "name": "zenbittech-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "zenbittech-node": "server.js"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./bin/server.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon ./bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tvido/zenbittech-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tvido/zenbittech-node/issues"
+  },
+  "homepage": "https://github.com/Tvido/zenbittech-node#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "joi": "^17.6.2",
+    "mongoose": "^6.6.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
